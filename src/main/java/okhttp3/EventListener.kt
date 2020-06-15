@@ -258,7 +258,7 @@ abstract class EventListener {
     call: Call,
     request: Request
   ) {
-    println(request.headers)
+    println("REQ: " + request.headers)
   }
 
   /**
@@ -326,6 +326,7 @@ abstract class EventListener {
     call: Call,
     response: Response
   ) {
+    println("RES: " + response.headers)
   }
 
   /**
